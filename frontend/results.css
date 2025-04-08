@@ -1,0 +1,117 @@
+/* SegmentationResults.css */
+
+.segmentation-container {
+    min-height: 100vh;
+    background-color: #e9e4ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .back-button {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-btn {
+    display: flex;
+    align-items: center;
+    color: #1a1a3c;
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .back-btn:hover {
+    color: #000066;
+  }
+  
+  .arrow-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1a1a3c;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+  }
+   */
+   .image-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .image-box {
+    flex: 1;
+    text-align: center;
+    max-width: 45%;
+  }
+  
+  @media (min-width: 768px) {
+    .image-wrapper {
+      flex-direction: row;
+    }
+  }
+  
+  .image-box {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .image-label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .image-display {
+    width: 100%;
+    border-radius: 0.75rem;
+    object-fit: contain;
+  }
+  
+  .report-btn {
+    margin-top: 2rem;
+    background-color: #0b1e75;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .report-btn:hover {
+    background-color: #233b99;
+  }
+  

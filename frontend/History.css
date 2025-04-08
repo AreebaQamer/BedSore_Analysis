@@ -1,0 +1,129 @@
+/* HistoryPage.css */
+.history-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .history-heading {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .history-table th,
+  .history-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .history-table th {
+    background-color: #00124E;
+    color: white;
+    font-size: 1.1em;
+  }
+  
+  .history-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .history-table a {
+    color:  #00124E;
+    text-decoration: none;
+  }
+  
+  .history-table a:hover {
+    text-decoration: underline;
+  }
+  
+  .history-table td {
+    font-size: 1em;
+  }
+  
+  .history-table td a {
+    word-wrap: break-word;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .history-container {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .history-heading {
+      font-size: 1.5em; /* Reduce font size for smaller screens */
+    }
+  
+    .history-table {
+      font-size: 0.9em; /* Reduce font size in the table for small screens */
+    }
+  
+    .history-table th,
+    .history-table td {
+      padding: 8px 10px; /* Reduce padding to fit on smaller screens */
+    }
+  
+    .history-table a {
+      font-size: 0.9em; /* Slightly reduce the font size for links */
+    }
+  }
+  
+  /* Mobile view (screens 480px and below) */
+  @media (max-width: 480px) {
+    .history-heading {
+      font-size: 1.2em; /* Make heading smaller on very small screens */
+    }
+  
+    .history-table th,
+    .history-table td {
+      padding: 6px 8px; /* Adjust padding for better fit */
+    }
+  
+    .history-table td {
+      font-size: 0.85em; /* Reduce font size further for mobile screens */
+    }
+  
+    /* Make the table look good on mobile */
+    .history-table thead {
+      display: none; /* Hide header row on mobile */
+    }
+  
+    .history-table, .history-table tbody, .history-table tr, .history-table td {
+      display: block; /* Make table and rows block elements */
+      width: 100%; /* Full width for mobile view */
+    }
+  
+    .history-table td {
+      position: relative;
+      padding-left: 40%; /* Add space for labels on the left */
+      word-wrap: break-word;
+      text-align: left;
+    }
+  
+    .history-table td::before {
+      content: attr(data-label); /* Add custom labels for each cell */
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      font-weight: bold;
+    }
+  
+    .history-table td a {
+      font-size: 1em; /* Increase link size for better touch interaction */
+      word-wrap: break-word;
+    }
+  }
+  

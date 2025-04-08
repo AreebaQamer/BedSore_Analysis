@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .login-container1 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00124E;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .login-left1 {
+    width: 60%; /* More than half */
+    height: 100%; /* Align with parent height */
+    background-color: white;
+    padding: 50px;
+    padding-top: 100px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-title1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+  }
+  
+  .social-login1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .google-btn1,
+  .facebook-btn1 {
+    padding: 12px 15px;
+    gap: 10px; /* Space between icon & text */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .google-btn1 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .facebook-btn1 {
+    /* background-color: #1877f2; */
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  .icon1 {
+    font-size: 20px; /* Icon size */
+  }
+  /* Google Icon - Multicolor */
+.google-icon1 {
+  color: #DB4437;  /* Google's red color */
+}
+
+/* Facebook Icon - Blue */
+.facebook-icon1 {
+  color: #1877f2;  /* Facebook's official blue */
+}
+  .or-text1 {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .input-field1 {
+    background-color:#fff;
+    width: 220%;
+    padding: 10px;
+    margin-bottom:20px;
+    margin-left: -70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-btn1 {
+    background-color: #00124E;
+    color: white;
+    padding: 12px;
+    width: 220%;
+    border: none;
+    margin-left: -70px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  .signup-text1 {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .signup-text1 a {
+    color: #00124E;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Right side */
+  .login-right1 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start; /* Align text to top */
+    color: white;
+    padding: 50px;
+    text-align: right;
+    position: relative;
+  }
+
+  .login-text1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: start;  /* Keeps text aligned to the start */
+    max-width: 100%;  
+    margin-left: -90px;  /* Moves text slightly to the left */
+}
+
+  
+  .visual-image1 {
+    position: absolute;
+    bottom: 5%;  /* Move it slightly down */
+    left: -30%;  /* Shift it more to the left */
+    top:20%;
+    width: 140%;  /* Increase size */
+    max-width: 1000px;  /* Bigger max width */
+  }
+  @media (max-width: 768px) {
+    .login-container1 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .login-left1 {
+      width: 90%;
+      border-radius: 20px;
+      padding: 40px 20px;
+      box-shadow: none;
+    }
+  
+    .login-right1 {
+      display: none; /* Hide the visual / text side */
+    }
+  
+    .input-field1,
+    .login-btn1 {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .login-title1 {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .signup-text1 {
+      text-align: center;
+    }
+  }
+  
+  
