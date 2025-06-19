@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: ./signin-login/mern-auth-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./signin-login/mern-auth-backend:/app
+    environment:
+      - NODE_ENV=development
+
+  frontend:
+    build: ./signin-login
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
